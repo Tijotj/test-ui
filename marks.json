@@ -1,0 +1,32 @@
+{
+    "marks" : [
+        {
+            "name" : "Sumit",
+            "location" : "Kerala"
+        },
+        {
+            "name" : "Amit",
+            "location" : "Tamil nadu"
+        },
+        {
+            "name" : "Shani",
+            "location" : "Karnataka"
+        },
+        {
+            "name" : "Rachel",
+            "location" : "Andhra"
+        },
+        {
+            "name" : "Raju",
+            "location" : "Maharashtra"
+        },
+        {
+            "name" : "Lira",
+            "location" : "Jammu"
+        },
+        {
+            "name" : "Terry",
+            "location" : "Uttarpredesh"
+        }
+    ]
+}
