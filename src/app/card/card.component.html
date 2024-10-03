@@ -1,0 +1,115 @@
+<div class="item-container">
+    <div class="bar-chart"> 
+        <h4>Average Student Marks</h4>
+        <div class="barchart-group">
+            <!-- <canvas id="myCanvas" width="300" height="200"></canvas> -->
+            <div class="marks">
+                <div>40 -</div>
+                <div>45 -</div>
+                <div>50 -</div>
+                <div>55 -</div>
+                <div>60 -</div>
+                <div>65 -</div><div>40</div>
+                <div>70 -</div>
+                <div>75 -</div>
+                <div>80 -</div>
+                <div>85 -</div>
+                <div>90</div>
+            </div>
+            <div>
+                <div class="chart-container">
+                    <div class="chart-item1"></div>
+                    <div class="chart-item2"></div>
+                    <div class="chart-item3"></div>
+                    <div class="chart-item4"></div>
+                    <div class="chart-item5"></div>
+                    <div class="chart-item6"></div>
+                    <div class="chart-item7"></div>
+                </div>
+                <div class="subjects">
+                    <div>Phy</div>
+                    <div>Che</div>
+                    <div>Mat</div>
+                    <div>Mech</div>
+                    <div>Ell</div>
+                    <div>Els</div>
+                    <div>Civ</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pass-fail">
+        <h4>Pie Chart of students passed</h4>
+        <div class="piechart"></div>
+        <div class="pie-description">
+            <div class="pie-part1">
+                <div class="passed"></div>
+                <span>70% Passed</span>
+            </div>
+            <div class="pie-part2">
+                <div class="failed"></div>
+                <span>30% Failed</span>
+            </div>
+        </div>
+    </div>
+    <div class="branches-percentage">
+        <h3>Pass Percentage across branches</h3>
+        <div>
+            <select id="choose-branch" (change)="onChangeBranches($event)">
+                <option default>-Choose-</option>
+                <option value="cs">CS</option>
+                <option value="ee">EE</option>
+                <option value="ec">EC</option>
+                <option value="me">ME</option>
+            </select>
+        </div>
+        @if(branchCS) {
+            
+            <div id="branches-percentage-chart-cs"></div>
+            <h4>Computer Science</h4>
+            <div class="pie-part-cs">
+                <div class="passed"></div> 
+                <span>70% Passed</span>               
+            </div>
+        }
+        @if(branchEE) {
+            
+            <div id="branches-percentage-chart-ee"></div>
+            <h4>Electrical</h4>
+            <div class="pie-part-ee">
+                <div class="passed"></div>  
+                <span>60% Passed</span>              
+            </div>
+        }
+        @if(branchEC) {
+            
+            <div id="branches-percentage-chart-ec"></div>
+            <h4>Electronics & Communication</h4>
+            <div class="pie-part-ec">
+                <div class="passed"></div>        
+                <span>65% Passed</span>        
+            </div>
+        }
+        @if(branchME) {
+            
+            <div id="branches-percentage-chart-me"></div>
+            <h4>Mechanical</h4>
+            <div class="pie-part-me">
+                <div class="passed"></div>  
+                <span>68% Passed</span>              
+            </div>
+        }
+    </div>
+    <div class="events">
+         <button (click)="clickEventFunctions()">Events Coming Up!</button>
+        @if(eventData) {
+            <ul>
+                <li>Sports Meet Up - October 10 - 11</li>
+                <li>Art Fest - October 20 - 21</li>
+                <li>Internal Exam - Nov 1 - 5</li>
+                <li>University Exam - Dec 1 - 10</li>
+            </ul>
+        }
+    </div>
+    
+</div>

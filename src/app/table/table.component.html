@@ -1,0 +1,57 @@
+<h2>Student Marks</h2>
+<div class="marks-container">
+    <div class="row-item-hd">
+        <div><h4 (click)="sortIt()">Name <img src="caret-up-solid.svg" height="12" /></h4></div>
+        <div><h4>Reg No</h4></div>
+        <div><h4>Course</h4></div>
+        <div><h4>Semester</h4></div>
+        <div><h4>Total Marks(%)</h4></div>
+    </div>
+
+    <div class="row-item">
+            <div class="item-name">Sam</div>
+            <div class="reg-no">100120</div>
+            <div>CS</div>
+            <div>S7</div>
+            <div>62</div> 
+    </div>
+    <div class="row-item">
+        <div class="item-name">Prabhu</div>
+        <div class="reg-no">100140</div>
+        <div>ME</div>
+        <div>S2</div>
+        <div>78</div> 
+    </div>
+    <div class="row-item">
+            <div class="item-name">Manu</div>
+            <div class="reg-no">100125</div>
+            <div>EE</div>
+            <div>S7</div>
+            <div>67</div> 
+    </div>
+    <div class="row-item">
+        <div class="item-name">Shanu</div>
+        <div class="reg-no">100189</div>
+        <div>CS</div>
+        <div>S3</div>
+        <div>82</div> 
+    </div>
+    <div class="row-item">
+        <div class="item-name">Saritha</div>
+        <div class="reg-no">100345</div>
+        <div>EE</div>
+        <div>S7</div>
+        <div>64</div> 
+    </div>
+    
+</div> 
+
+<button (click)="listDetails()" id="button-api">Click me for Students' Locations - API</button> 
+<div class="get-api-container">
+    @for(user of this.listData2; track user.id) {
+        <div class="get-api">
+            <div>{{ user.name }}</div>
+            <div>{{ user.location }}</div>
+        </div> 
+    }
+</div>

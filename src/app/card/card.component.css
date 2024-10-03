@@ -1,0 +1,179 @@
+
+.events {
+    padding: 10px 0;
+}
+.events button {
+    background-color: rgb(41, 72, 213);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.events button:hover {
+    background-color: rgb(159, 4, 249);
+    transition: background-color 2s;
+}
+.events ul li {
+    list-style: none;
+    padding: 5px;
+}
+.item-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 20px;
+}
+.chart-container {
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    display: flex;
+    column-gap: 10px;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 20px 0 0;
+    padding-left: 10px;
+}
+.chart-container > div {
+    background-color: rgb(41, 72, 213);
+    width: 30px;
+}
+.chart-container .chart-item1 {    
+    height: 150px; 
+}
+.chart-container .chart-item2 {    
+    height: 130px; 
+}
+.chart-container .chart-item3 {
+    height: 200px;    
+}
+.chart-container .chart-item4 {    
+    height: 170px; 
+}
+.chart-container .chart-item5 {
+    height: 100px;    
+}
+.chart-container .chart-item6 {
+    height: 210px;    
+}
+.chart-container .chart-item7 {
+    height: 140px;    
+}
+.chart-container .chart-item1:hover, .chart-container .chart-item2:hover, .chart-container .chart-item3:hover, .chart-container .chart-item4:hover, .chart-container .chart-item5:hover, .chart-container .chart-item6:hover, .chart-container .chart-item7:hover {
+    box-shadow: 2px 2px #e1dede;
+    padding-top: 1px;
+    background-color: rgb(159, 4, 249);
+    transition: background-color 2s;
+}
+.bar-chart .subjects {
+    display: flex;
+    flex-direction: row;
+}
+.bar-chart .subjects div {
+    padding: 0 8px;
+}
+.barchart-group {
+    display: flex;
+}
+.barchart-group .marks {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 10px 0 0;
+    justify-content: center;
+}
+.piechart {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background-image: conic-gradient(rgb(135, 238, 130) 65deg, rgb(255,165,0) 35deg);
+    margin: 10px 0;
+}
+.piechart:hover {
+    box-shadow: -1px -1px #dddddd;
+}
+
+.pass-fail .pie-description {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 10px;
+}
+.pass-fail .pie-description .pie-part1 .passed {
+    background-color: rgb(255,165,0);
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.pass-fail .pie-description .pie-part2 .failed {
+    background-color: rgb(135, 238, 130);
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.pass-fail .pie-description .pie-part1, .pass-fail .pie-description .pie-part2 {
+    display: flex;
+}
+.branches-percentage #branches-percentage-chart-cs {
+    height: 160px;
+    width: 160px;
+    border: 1px solid #e1dede;
+    border-radius: 50%;
+    background-image: conic-gradient(rgb(255, 165, 3) 300deg, rgb(255,255,255) 60deg);
+    margin-top: 10px;
+}
+.branches-percentage #branches-percentage-chart-ee {
+    height: 160px;
+    width: 160px;
+    border: 1px solid #e1dede;
+    border-radius: 50%;
+    background-image: conic-gradient(rgb(70, 255, 3) 200deg, rgb(255,255,255) 160deg);
+    margin-top: 10px;
+}
+.branches-percentage #branches-percentage-chart-ec {
+    height: 160px;
+    width: 160px;
+    border: 1px solid #e1dede;
+    border-radius: 50%;
+    background-image: conic-gradient(rgb(255, 3, 209) 240deg, rgb(255,255,255) 120deg);
+    margin-top: 10px;
+}
+.branches-percentage #branches-percentage-chart-me {
+    height: 160px;
+    width: 160px;
+    border: 1px solid #e1dede;
+    border-radius: 50%;
+    background-image: conic-gradient(rgb(255, 16, 3) 280deg, rgb(255,255,255) 80deg);
+    margin-top: 10px;
+}
+.pie-part-ee .passed, .pie-part-ec .passed, .pie-part-cs .passed, .pie-part-me .passed {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+.pie-part-cs .passed {
+    background-color: rgb(255, 165, 3);
+}
+.pie-part-ee .passed {
+    background-color: rgb(70, 255, 3);
+}
+.pie-part-ec .passed {
+    background-color: rgb(255, 3, 209);
+}
+.pie-part-me .passed {
+    background-color: rgb(255, 16, 3);
+}
+.pie-part-cs, .pie-part-ee, .pie-part-ec, .pie-part-me {
+    display: flex;
+}
+.branches-percentage h4 {
+    padding: 5px 0;
+}
+.branches-percentage #choose-branch {
+    background-color:rgb(41, 72, 213);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+.branches-percentage #choose-branch:hover {
+    background-color: rgb(159, 4, 249);
+    transition: background-color 2s;
+}
+
+
