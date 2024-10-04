@@ -13,6 +13,8 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ### Challenges
 Sorting is incomplete.
-The requiremnt is for using fetch api but I tried api calling using get method.
+The requirement is for using fetch api but I tried api calling using get method.
+
+A file called marks.json was used for API calling and it is placed in the root folder.
 
 
