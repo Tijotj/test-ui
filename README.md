@@ -1,4 +1,4 @@
-# Project is about user statics and details of courses in a college
+# Project is about user statistics and details of courses in a college
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.2.
 
